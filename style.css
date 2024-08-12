@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    --nav-red: #ff0000;
+    --nav-light-white: #d2cdcd;
+    --dark-blue: #000231;
+    --white: #ffffff;
+    --nav-black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+a {
+    color: var(--nav-light-white);
+}
+
+ul li a {
+    color: var(--white);
+}
+
+.dot {
+    color: var(--nav-red);
+}
+
+
+/* Bootstrap modification */
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+        justify-content: flex-end;
+    }
+}
+
+
+
+/* Scroll bar design */
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #010101;
+    /* Background color of the track */
+    border-radius: 2px;
+    /* Optional: rounded corners */
+}
+
+/* Handle (Thumb) */
+::-webkit-scrollbar-thumb {
+    background: var(--nav-red);
+    /* Color of the scrollbar thumb */
+    border-radius: 10px;
+    /* Optional: rounded corners */
+    border: 3px solid var(--nav-red);
+    /* Adds some space around thumb */
+}
+
+/* Handle (Thumb) on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color of the thumb on hover */
+}
+
+/* Optional: Styling scrollbar buttons */
+::-webkit-scrollbar-button {
+    background: #888;
+    height: 16px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background: #555;
+    /* Top button */
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background: #555;
+    /* Bottom button */
+}
+
+/* Optional: Styling scrollbar corner */
+::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+}
+
+
+/* Home Page */
+.sec-1 {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    height: 100vh;
+    /* Adjust the height as needed */
+}
+
+.sec-1 .background-video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 1;
+    /* Adjust the opacity if you want the video to be more or less visible */
+}
+
+.sec-1 #sec-1-container {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.sec-1-text h1 {
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 100px;
+    letter-spacing: -1px;
+}
+
+.sec-1-text {
+    position: relative;
+    top: 50%;
+}
+
+.sec-1-text p {
+    font-size: 38px;
+    font-weight: 300;
+    color: var(--nav-light-white);
+}
+
+.sec-2-hd h2 {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--nav-red);
+}
+
+.sec-2-hd.text-center {
+    padding: 0 19%;
+}
+
+.sec-2-all-pattern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.pattern-One img,
+.pattern-Two img,
+.pattern-Three img,
+.pattern-Four img {
+    width: 60px;
+    height: auto;
+}
+
+.sec-2-all-pattern p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+
+/* Footer start */
+footer {
+    background-color: var(--dark-blue);
+}
+
+.quick-items ul li {
+    list-style-type: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.quick-items ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 4%;
+    padding: 2% 0 0 0;
+}
+
+.quick-items li a {
+    color: white;
+}
+
+.ft-main h6 {
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.ql-all {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1.5%;
+}
+
+.quick-line ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.quick-Privacy ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.quick-Privacy ul {
+    list-style-type: none;
+}
+
+.quick-items-copyright p {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* Section 3 start */
+.sp-Text p {
+    font-size: 31px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.sp-Text img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+}
+
+.sp-Text p {
+    font-size: 31px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding: 6% 0 0 0;
+}
+
+/* Section 4 start */
+.sec-4 {
+    background: url(assets/Images/bg-layout.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sec-4-first h3 {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 600;
+}
+
+.sec-4-Text p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.sec-4-Second h3 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: -3px;
+}
+
+.sec-4-Second p {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* Home page end */
+
+
+/* Contact Page start */
+.cs-1 {
+    background: url(assets/Images/contact/top_bg_Contact.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.cs-left-add p,
+.cs-left p {
+    font-size: 21px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.btn-cs a {
+    background-color: red;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 13px 33px;
+}
+
+.thick-hr {
+    height: 3px;
+    /* Adjust the thickness */
+    background-color: black;
+    border: none;
+    /* Remove the default border */
+    margin: 20px 0;
+    /* Optional: adjust spacing around the hr */
+}
+
+.cs-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+}
+
+.cs-con-left h6,
+.cs-con-right h6 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 0.5;
+}
+
+.cs-con-left p {
+    color: red;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.cs-con-right p {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+select#op-val,
+#name,
+#email,
+#mobile_num, #comments {
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+}
+
+.service,
+.cs-name,
+.cs-email,
+.cs-mobile, .cs-comments {
+    border-bottom: 1px solid var(--nav-black);
+}
+input#submit {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+    border: none;
+    padding: 7px 41px;
+    margin-top: 40px;
+    font-size: 19px;
+    font-weight: 600;
+}
+textarea {
+    border: none;
+}
