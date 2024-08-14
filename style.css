@@ -262,7 +262,7 @@ footer {
 /* Section 4 start */
 .sec-4 {
     /* background: url(assets/Images/bg-layout.jpg); */
-    background: linear-gradient(rgba(26, 21, 21, 0.5),rgba(1, 6, 88, 0.5)), url('assets/Images/bg-layout.jpg');
+    background: linear-gradient(rgba(26, 21, 21, 0.5), rgba(1, 6, 88, 0.5)), url('assets/Images/bg-layout.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -284,6 +284,7 @@ footer {
     font-weight: 600;
     letter-spacing: -3px;
 }
+
 .sec-4-Second p {
     font-size: 19px;
     font-weight: 500;
@@ -559,6 +560,28 @@ td.t-text {
     text-align: center;
 }
 
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+table#tab-Item {
+    width: 100%;
+}
+
+.p-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11%;
+}
+
 /* Accordion code end */
 
 
@@ -610,8 +633,92 @@ td.t-text {
 .p-Img {
     padding: 2%;
 }
+
 ul.ab-list-item li {
     font-size: 18px;
     font-weight: 500;
     padding: 0.2% 0;
+}
+
+/* Swiper slider js */
+.slide-Items img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Responsive code start */
+
+/* Mobile view 360px to 768px */
+@media screen and (min-width:360px) and (max-width:768px) {
+    *{
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+        /* Width of the scrollbar */
+    }
+    .sec-2-all-pattern {
+        display: block;
+    }
+    .sec-1 .background-video {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        opacity: 1;
+    }
+    .sec-1-text {
+        position: relative;
+        top: 7%;
+    }
+    .sec-1-text p {
+        font-size: 26px;
+        font-weight: 300;
+        color: var(--nav-light-white);
+    }
+    .sec-1-text h1 {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 55px;
+        letter-spacing: -1px;
+    }
+    .sec-4-first h3 {
+        color: #ffffff;
+        font-size: 45px;
+        font-weight: 600;
+    }
+    .sec-2-hd h2 {
+        font-size: 36px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--dark-blue);
+    }
+    .sec-2-hd.text-center {
+        padding: 0 7%;
+    }
+
+    /* Footer */
+    .ql-all {
+        display: block;
+    }
+    .quick-line ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        list-style-type: none;
+    }
+    .quick-Privacy ul {
+        display: flex;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+    .quick-items-copyright p {
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
